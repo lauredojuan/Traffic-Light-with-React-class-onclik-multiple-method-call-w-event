@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap";
+
 
 //create your first component
 export function Home() {
