@@ -1,24 +1,19 @@
 import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import "bootstrap";
 
 //create your first component
 export function Home() {
+	let isOn = true;
+
+	// onFunction();
+
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container-fluid">
+			<div className="box d-flex flex-column mt-3">
+				<div className={`red m-2 ${isOn ? "" : "lightOn"}`} />
+				<div className="yellow m-2 lightOn" />
+				<div className="green m-2" />
+			</div>
 		</div>
 	);
 }

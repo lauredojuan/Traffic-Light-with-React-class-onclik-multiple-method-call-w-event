@@ -11,3 +11,36 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+
+.box{
+  
+    background: black;
+    border-radius: 5px;
+}
+
+.red{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: red;
+}
+.yellow{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: orange;
+
+}
+
+.green{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: green;
+}
+
+.lightOn{
+    box-shadow: 5px 5px 5px yellow;
+}
+
