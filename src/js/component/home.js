@@ -12,28 +12,43 @@ export class Home extends React.Component {
 		};
 	}
 
+	clickAcion = (e, string) => {
+		console.log(string);
+		this.setState({ color: string });
+	};
+
 	render() {
-		let redOn = this.state.color === "red" ? "lightOn" : "";
-		let yellowOn = this.state.color === "yellow" ? "lightOn" : "";
-		let greenOn = this.state.color === "green" ? "lightOn" : "";
+		// let redOn = this.state.color === "red" ? "lightOn" : "";
+		// let yellowOn = this.state.color === "yellow" ? "lightOn" : "";
+		// let greenOn = this.state.color === "green" ? "lightOn" : "";
 
 		return (
 			<div className="container-fluid">
 				<div className="box d-flex justify-content-center mt-3">
 					<div className="d-flex flex-column">
 						<div
-							onClick={() => this.setState({ color: "red" })}
-							className={"red m-2 " + redOn}
+							onClick={event => this.clickAcion(event, "red")}
+							className={
+								this.state.color === "red"
+									? "red lightOn m-2 "
+									: "red m-2"
+							}
 						/>
-
 						<div
-							onClick={() => this.setState({ color: "yellow" })}
-							className={"yellow m-2 " + yellowOn}
+							onClick={event => this.clickAcion(event, "yellow")}
+							className={
+								this.state.color === "yellow"
+									? "yellow m-2  lightOn"
+									: "yellow m-2"
+							}
 						/>
-
 						<div
-							onClick={() => this.setState({ color: "green" })}
-							className={"green m-2 " + greenOn}
+							onClick={event => this.clickAcion(event, "green")}
+							className={
+								this.state.color === "green"
+									? "green m-2 lightOn"
+									: "green m-2"
+							}
 						/>
 					</div>
 				</div>
