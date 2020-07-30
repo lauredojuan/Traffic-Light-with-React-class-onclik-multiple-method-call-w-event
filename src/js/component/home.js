@@ -13,7 +13,7 @@ export class Home extends React.Component {
 	}
 
 	clickAcion = (e, string) => {
-		console.log(string);
+		// console.log(string);
 		this.setState({ color: string });
 	};
 
@@ -24,34 +24,37 @@ export class Home extends React.Component {
 
 		return (
 			<div className="container-fluid">
-				<div className="box d-flex justify-content-center mt-3">
+				<div className=" ligthImg d-flex justify-content-center mt-5">
 					<div className="d-flex flex-column">
 						<div
 							onClick={event => this.clickAcion(event, "red")}
 							className={
 								this.state.color === "red"
-									? "red lightOn m-2 "
-									: "red m-2"
+									? "red lightOn  "
+									: "red  "
 							}
 						/>
 						<div
 							onClick={event => this.clickAcion(event, "yellow")}
 							className={
 								this.state.color === "yellow"
-									? "yellow m-2  lightOn"
-									: "yellow m-2"
+									? "yellow   lightOn"
+									: "yellow "
 							}
 						/>
 						<div
 							onClick={event => this.clickAcion(event, "green")}
 							className={
 								this.state.color === "green"
-									? "green m-2 lightOn"
-									: "green m-2"
+									? "green  lightOn"
+									: "green "
 							}
 						/>
 					</div>
 				</div>
+
+				<div className="post" />
+				<div className="base" />
 			</div>
 		);
 	}

@@ -1,41 +1,76 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-.box{
-    width: 100px;
-    margin: 0 auto;
-    background: black;
-    border-radius: 20px;
-}
+
+
+
 .red{
-    width: 70px;
-    height: 70px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    background: red;
-    opacity: 0.3;
+    background: rgb(117, 1, 1);
+    margin-top: 36px;
+    border: 3px solid  rgb(36, 32, 32);
+  
 }
 .red.lightOn{
     box-shadow: 0px 0px 50px rgb(255, 60, 0);
-    opacity: 1;
+    background: red;
+    border: 1px solid   red;
+   
 }
    .yellow{
-    width: 70px;
-    height: 70px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    background: orange;
-    opacity: 0.3;
+    background: rgb(133, 87, 1);
+    margin-top: 17px;
+    border: 3px solid  rgb(36, 32, 32);
+    
 }
 .yellow.lightOn{
     box-shadow: 0px 0px 50px rgb(255, 208, 0);
-    opacity: 1;
+    background: orange;
+    border: 1px solid   orange;
 }
 .green{
-    width: 70px;
-    height: 70px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    background: green;
-    opacity: 0.3;
+    background: rgb(1, 59, 1);
+    margin-top: 16px;
+    border: 3px solid rgb(36, 32, 32);
+   
 }
 .green.lightOn{
     box-shadow: 0px 0px 50px rgb(123, 255, 0);
-    opacity: 1;
+    background: green;
+    border: 1px solid green;
 }
+.post{
+   width: 20px;
+   height: 400px;
+   background: rgb(19, 18, 18);
+   margin: 0 auto;
+}
+
+.base{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100px;
+    height: 20px;
+    background: rgb(19, 18, 18);
+    margin: 0 auto;
+}
+
+.ligthImg{
+    margin: 0 auto;
+    width: 250px;
+    height: 300px;
+    background: url(https://pngimg.com/uploads/traffic_light/traffic_light_PNG56214.png); 
+    background-repeat: no-repeat;
+    background-size: 250px 300px;
+   }
+
+   
+
+
