@@ -9,6 +9,7 @@ export class Home extends React.Component {
 			color: ""
 		};
 	}
+
 	render() {
 		let redOn = this.state.color === "red" ? "lightOn" : "";
 		let yellowOn = this.state.color === "yellow" ? "lightOn" : "";
