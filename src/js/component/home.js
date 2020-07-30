@@ -2,6 +2,8 @@ import React from "react";
 
 //create your first component
 
+// multiple methd call onclik event (assing event argument)
+
 export class Home extends React.Component {
 	constructor() {
 		super();
