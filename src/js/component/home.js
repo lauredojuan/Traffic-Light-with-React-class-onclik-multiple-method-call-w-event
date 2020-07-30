@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 
 //create your first component
 
-export class Home extends Component {
+export class Home extends React.Component {
 	constructor() {
 		super();
 		this.state = {
